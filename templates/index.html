@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}
+Hjem
+{% endblock %}
+
+{% block head %}
+<!-- Scroll reveal CSS-->
+<script src="../static/js/scrollreveal.js"></script>
+<script>
+    ScrollReveal({ reset: true });
+    window.sr = ScrollReveal();
+    sr.reveal('.row', { delay: 100, distance: '10%', origin: 'bottom' });
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="container p-lg-5 px-4">
+    <div class="row">
+        <!-- Left -->
+        <div class="col-12 col-md-6">
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{{ data[0]["image"] }}">
+                            </div>
+                            <div class="col-6">
+                                <span class="badge rounded-pill bg-secondary">{{ data[0]["author"] }}</span>
+                                <h3 class="card-title">{{ data[0]["title"] }}</h3>
+
+                                <p class="card-text">{{ data[0]["description"] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tittel</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Utvalg som eier innholdet</h6>
+                        <p class="card-text">Lorem ipsum, jeg husker ikke mer av teksten enn dette.....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left -->
+        <div class="col-12 col-md-6">
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tittel</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Utvalg som eier innholdet</h6>
+                        <p class="card-text">Lorem ipsum, jeg husker ikke mer av teksten enn dette.....</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title">Dagens meny</h5>
+                                <p class="card-text"><i class="fa-solid fa-pizza-slice"></i>&nbsp;{{ data[1]["main_course"] }}</p>
+                                <p class="card-text"><i class="fa-solid fa-cake-candles"></i>&nbsp;{{ data[1]["dessert"] }}</p>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <span class="mx-auto"><i class="thumbs-icon fa-regular fa-thumbs-up"></i>&nbsp;<i class="thumbs-icon fa-regular fa-thumbs-down"></i></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

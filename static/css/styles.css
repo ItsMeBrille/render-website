@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "JockeyOne";
+    src: url("../fonts/JockeyOne-Regular.ttf");
+  }
+
+body{
+    font-family: "JockeyOne";
+}
+
+
+main{
+    background-color: rgb(33, 6, 49);
+}
+
+.navbar{
+    background-color: rgb(30, 5, 45);
+}
+
+.nav-link {
+    color: yellow;
+}
+
+.card{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.thumbs-icon{
+    font-size: 60px;
+}
