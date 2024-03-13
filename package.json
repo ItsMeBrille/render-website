@@ -1,0 +1,24 @@
+{
+  "name": "render-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsMeBrille/render-website.git"
+  },
+  "keywords": [
+    "render",
+    "node"
+  ],
+  "author": "ItsMeBrille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsMeBrille/render-website/issues"
+  },
+  "homepage": "https://github.com/ItsMeBrille/render-website#readme"
+}
