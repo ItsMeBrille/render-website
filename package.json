@@ -1,24 +1,19 @@
 {
-  "name": "render-website",
+  "name": "express-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ItsMeBrille/render-website.git"
-  },
-  "keywords": [
-    "render",
-    "node"
-  ],
-  "author": "ItsMeBrille",
+  "description": "Express Hello World on Render",
+  "main": "app.js",
+  "repository": "https://github.com/render-examples/express-hello-world",
+  "author": "Render Developers",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ItsMeBrille/render-website/issues"
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
   },
-  "homepage": "https://github.com/ItsMeBrille/render-website#readme"
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
 }
