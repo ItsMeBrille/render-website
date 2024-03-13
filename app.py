@@ -50,7 +50,7 @@ def get_first_post_data():
 
 def get_pause():
     # Fetch the HTML content of the webpage
-    response = requests.get("http://kkerdetpausesn.art/")
+    response = requests.get("https://kkerdetpause.art/")
     
     # Check if the request was successful
     if response.status_code == 200:
