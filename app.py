@@ -48,19 +48,6 @@ def get_first_post_data():
         print("Failed to fetch the webpage.")
 
 
-def get_pause():
-    # Fetch the HTML content of the webpage
-    response = requests.get("https://kkerdetpause.art/")
-    
-    # Check if the request was successful
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, 'html.parser')
-        # Find and return the title of the webpage
-        return soup.title.text.strip()
-    else:
-        print("Failed to fetch the webpage.")
-
-
 ### Flask app
 app = Flask(__name__)
 
@@ -70,8 +57,7 @@ def index():
     # Call the function and print the result
     first_post_data = get_first_post_data()
     today_menu = get_today_menu()
-    pause = get_pause()
-    return render_template("index.html", data=[first_post_data, today_menu, pause])
+    return render_template("index.html", data=[first_post_data, today_menu])
 
 
 # Index redirect

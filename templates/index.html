@@ -22,17 +22,19 @@ Hjem
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="img-fluid" src="{{ data[0]["image"] }}">
-                            </div>
-                            <div class="col-6">
-                                <span class="badge rounded-pill bg-secondary">{{ data[0]["author"] }}</span>
-                                <h3 class="card-title">{{ data[0]["title"] }}</h3>
+                        <h5 class="card-title">Dagens meny</h5>
+                        <p class="card-text"><i class="fa-solid fa-pizza-slice"></i>&nbsp;{{ data[1]["main_course"] }}</p>
+                        <p class="card-text"><i class="fa-solid fa-cake-candles"></i>&nbsp;{{ data[1]["dessert"] }}</p>
+                    </div>
+                </div>
+            </div>
 
-                                <p class="card-text">{{ data[0]["description"] }}</p>
-                            </div>
-                        </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Neste pause</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Skole</h6>
+                        <p class="card-text" id="pause"></p>
                     </div>
                 </div>
             </div>
@@ -54,9 +56,17 @@ Hjem
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Neste pause</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Skole</h6>
-                        <p class="card-text">{{ data[2] }}</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{{ data[0]["image"] }}">
+                            </div>
+                            <div class="col-6">
+                                <span class="badge rounded-pill bg-secondary">{{ data[0]["author"] }}</span>
+                                <h3 class="card-title">{{ data[0]["title"] }}</h3>
+
+                                <p class="card-text">{{ data[0]["description"] }}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,21 +74,12 @@ Hjem
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <h5 class="card-title">Dagens meny</h5>
-                                <p class="card-text"><i class="fa-solid fa-pizza-slice"></i>&nbsp;{{ data[1]["main_course"] }}</p>
-                                <p class="card-text"><i class="fa-solid fa-cake-candles"></i>&nbsp;{{ data[1]["dessert"] }}</p>
-                            </div>
-                            <div class="col-6 my-auto">
-                                <span class="mx-auto"><i class="thumbs-icon fa-regular fa-thumbs-up"></i>&nbsp;<i class="thumbs-icon fa-regular fa-thumbs-down"></i></span>
-                                
-                            </div>
-                        </div>
+                        <h5 class="card-title">Nyeste fra Signal</h5>
+                        <span class="badge rounded-pill bg-secondary">{{ data[0]["author"] }}</span>
+                        <p class="card-text">Lorem ipsum, jeg husker ikke mer av teksten enn dette.....</p>
                     </div>
                 </div>
             </div>
-
 
         </div>
 
