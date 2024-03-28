@@ -32,9 +32,17 @@ Hjem
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Neste pause</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Skole</h6>
-                        <p class="card-text" id="pause"></p>
+                        <h4 class="card-title" id="pause">Neste pause</h4>
+                        <p class="card-text">
+                            08:40 - 08:45<br>
+                            09:25 - 09:35<br>
+                            10:15 - 10:20<br>
+                            <b>11:00 - 11:45</b><br>
+                            12:25 - 12:30<br>
+                            13:10 - 13:20<br>
+                            13:55 - 14:00<br>
+                            14:45 : 14:50
+                        </p>
                     </div>
                 </div>
             </div>
@@ -67,16 +75,6 @@ Hjem
                                 <p class="card-text">{{ data[0]["description"] }}</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Nyeste fra Signal</h5>
-                        <span class="badge rounded-pill bg-secondary">{{ data[0]["author"] }}</span>
-                        <p class="card-text">Lorem ipsum, jeg husker ikke mer av teksten enn dette.....</p>
                     </div>
                 </div>
             </div>

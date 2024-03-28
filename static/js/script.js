@@ -38,18 +38,16 @@ const events = {
     "10:15": 5, // 10:15 AM
     "11:00": 45, // 11:00 AM
     "12:25": 5, // 12:25 PM
-    "13:10": 0, // 1:10 PM
+    "13:10": 10, // 1:10 PM
     "13:55": 5, // 1:55 PM
     "14:45": 5, // 2:45 PM
 };
 
 function updateCounter() {
     const now = new Date();
-    const nowSeconds = Number(now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds());
-
+    const nowSeconds = Number(now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds())
     for (const time in events) {
         eventSeconds = Number(time.split(':')[0]*3600 + time.split(':')[1]*60);
-
         if (nowSeconds <= eventSeconds+events[time]*60) {
             if (nowSeconds < eventSeconds) {
                 eventCountdown = eventSeconds - nowSeconds;
@@ -58,13 +56,9 @@ function updateCounter() {
                 document.getElementById('pause').innerHTML = `${events[time]} minutter pause!`;
             }
             return;
-        }
-        
-        
-    }
-
-    
-}ø
+        }   
+    }   
+}
 
 // Initial call to update counter
 updateCounter();
